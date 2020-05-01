@@ -1,0 +1,11 @@
+{% extends "learning_logs/base.html" %}
+
+    {% block content %}
+
+    <!-- includes the topic_id value in the URL, so the view function can associate the new entry
+        with the correct topic-->
+    <p><a href="{% url 'learning_logs:topic' topic.id %}">{{ topic}}</a>
+    </p>
+
+{% endblock content %}
+
